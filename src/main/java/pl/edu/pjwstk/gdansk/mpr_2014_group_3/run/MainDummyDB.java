@@ -1,4 +1,4 @@
-package main.java.pl.edu.pjwstk.gdansk.mpr_2014_group_3.domain.run;
+package main.java.pl.edu.pjwstk.gdansk.mpr_2014_group_3.run;
 
 
 import java.sql.Connection;

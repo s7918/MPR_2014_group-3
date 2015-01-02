@@ -1,5 +1,6 @@
-package main.java.pl.edu.pjwstk.gdansk.mpr_2014_group.domain;
+package main.java.pl.edu.pjwstk.gdansk.mpr_2014_group_3.domain;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -16,6 +17,13 @@ public class Article extends Entity {
     private List<Category> categories;
     private List<Comment> comments;
 
+    public Article() {
+        categories = new ArrayList<Category>();
+        comments = new ArrayList<Comment>();
+    }
+
+    
+    
     public String getTitle() {
         return title;
     }

@@ -1,5 +1,6 @@
-package main.java.pl.edu.pjwstk.gdansk.mpr_2014_group.domain;
+package main.java.pl.edu.pjwstk.gdansk.mpr_2014_group_3.domain;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -10,6 +11,10 @@ import java.util.List;
 public class Category extends Entity {
     private String name;
     private List<Article> articles;
+
+    public Category() {
+        articles = new ArrayList<Article>();
+    }
 
     public String getName() {
         return name;

@@ -1,5 +1,6 @@
-package main.java.pl.edu.pjwstk.gdansk.mpr_2014_group.domain;
+package main.java.pl.edu.pjwstk.gdansk.mpr_2014_group_3.domain;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -16,7 +17,14 @@ public class User extends Entity {
     private List<Comment> comments;
     private List<Article> articles;
 
-        public String getLogin() {
+    public User() {
+        comments = new ArrayList<Comment>();
+        articles = new ArrayList<Article>();
+    }
+
+    
+    
+    public String getLogin() {
         return login;
     }
 

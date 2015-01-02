@@ -1,5 +1,6 @@
-package main.java.pl.edu.pjwstk.gdansk.mpr_2014_group.domain;
+package main.java.pl.edu.pjwstk.gdansk.mpr_2014_group_3.domain;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -10,6 +11,10 @@ public class TypeOfUser extends Entity {
     private String name;
     
     private List<User> users;
+
+    public TypeOfUser() {
+        users = new ArrayList<User>();
+    }
 
 
     

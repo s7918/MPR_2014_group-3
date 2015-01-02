@@ -1,7 +1,7 @@
-package main.java.pl.edu.pjwstk.gdansk.mpr_2014_group.repositories;
+package main.java.pl.edu.pjwstk.gdansk.mpr_2014_group_3.repositories;
 
 import java.util.List;
-import main.java.pl.edu.pjwstk.gdansk.mpr_2014_group.domain.Entity;
+import main.java.pl.edu.pjwstk.gdansk.mpr_2014_group_3.domain.Entity;
 
 /**
  *

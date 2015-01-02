@@ -11,7 +11,6 @@ import main.java.pl.edu.pjwstk.gdansk.mpr_2014_group_3.domain.Article;
 import main.java.pl.edu.pjwstk.gdansk.mpr_2014_group_3.domain.Category;
 import main.java.pl.edu.pjwstk.gdansk.mpr_2014_group_3.domain.User;
 import main.java.pl.edu.pjwstk.gdansk.mpr_2014_group_3.repositories.IArticleRepository;
-import main.java.pl.edu.pjwstk.gdansk.mpr_2014_group_3.repositories.IRepository;
 
 /**
  *
@@ -98,6 +97,5 @@ public class DummyArticleRepository implements IArticleRepository{
                 return u.getArticles();
         }
         return new ArrayList<Article>();
-    }
-    
+    }   
 }

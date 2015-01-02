@@ -21,8 +21,6 @@ public class User extends Entity {
         comments = new ArrayList<Comment>();
         articles = new ArrayList<Article>();
     }
-
-    
     
     public String getLogin() {
         return login;

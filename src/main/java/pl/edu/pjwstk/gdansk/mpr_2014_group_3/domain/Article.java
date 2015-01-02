@@ -21,8 +21,6 @@ public class Article extends Entity {
         categories = new ArrayList<Category>();
         comments = new ArrayList<Comment>();
     }
-
-    
     
     public String getTitle() {
         return title;

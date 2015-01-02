@@ -32,6 +32,5 @@ public class TypeOfUser extends Entity {
 
     public void setUsers(List<User> users) {
         this.users = users;
-    }
-    
+    }    
 }

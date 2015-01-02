@@ -24,5 +24,4 @@ public abstract class Entity {
     public void setState(EntityState state) {
         this.state = state;
     }
-    
 }

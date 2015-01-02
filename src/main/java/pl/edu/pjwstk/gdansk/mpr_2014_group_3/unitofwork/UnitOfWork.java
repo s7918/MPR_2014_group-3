@@ -73,5 +73,4 @@ public class UnitOfWork implements IUnitOfWork{
         entity.setState(EntityState.Deleted);
         entities.put(entity, repository);
     }
-    
 }

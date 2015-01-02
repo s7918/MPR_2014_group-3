@@ -43,7 +43,4 @@ public class Comment extends Entity {
     public void setArticle(Article article) {
         this.article = article;
     }
-    
-    
-    
 }

@@ -31,7 +31,6 @@ public abstract class Repository<TEntity extends Entity> implements IRepository<
     protected abstract String getTableName();
     protected abstract void setUpUpdateQuery(TEntity entity) throws SQLException;
 
-    
     private String selectByIdSql = "SELECT * FROM " + getTableName()+ " WHERE id=?";
     private String deleteSql = "DELETE FROM " + getTableName() + " WHERE id=?";
     private String selectAllSql = "SELECT * FROM "+ getTableName();
@@ -51,8 +50,6 @@ public abstract class Repository<TEntity extends Entity> implements IRepository<
             e.printStackTrace();
         }
     }
-
-    
     
     @Override
     public void add(TEntity entity) {

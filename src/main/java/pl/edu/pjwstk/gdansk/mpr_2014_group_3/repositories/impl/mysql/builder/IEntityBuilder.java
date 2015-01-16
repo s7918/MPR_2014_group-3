@@ -1,4 +1,4 @@
-package main.java.pl.edu.pjwstk.gdansk.mpr_2014_group_3.repositories.impl.mysql;
+package main.java.pl.edu.pjwstk.gdansk.mpr_2014_group_3.repositories.impl.mysql.builder;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

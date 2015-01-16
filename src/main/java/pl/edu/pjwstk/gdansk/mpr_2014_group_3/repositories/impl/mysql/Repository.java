@@ -1,5 +1,6 @@
 package main.java.pl.edu.pjwstk.gdansk.mpr_2014_group_3.repositories.impl.mysql;
 
+import main.java.pl.edu.pjwstk.gdansk.mpr_2014_group_3.repositories.impl.mysql.builder.IEntityBuilder;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -24,13 +25,6 @@ public abstract class Repository<TEntity extends Entity> implements IRepository<
     protected PreparedStatement delete;
     protected Connection connection;
     IEntityBuilder<TEntity> builder;
-    
-    protected abstract void setUpInsertQuery(TEntity entity) throws SQLException;
-    protected abstract String getInsertQuery();
-    protected abstract String getUpdateQuery();
-    protected abstract String getTableName();
-    protected abstract void setUpUpdateQuery(TEntity entity) throws SQLException;
-
     private String selectByIdSql = "SELECT * FROM " + getTableName()+ " WHERE id=?";
     private String deleteSql = "DELETE FROM " + getTableName() + " WHERE id=?";
     private String selectAllSql = "SELECT * FROM "+ getTableName();
@@ -122,4 +116,11 @@ public abstract class Repository<TEntity extends Entity> implements IRepository<
             e.printStackTrace();
         }
     }
+    
+    protected abstract void setUpInsertQuery(TEntity entity) throws SQLException;
+    protected abstract String getInsertQuery();
+    protected abstract String getUpdateQuery();
+    protected abstract String getTableName();
+    protected abstract void setUpUpdateQuery(TEntity entity) throws SQLException;
+    
 }
